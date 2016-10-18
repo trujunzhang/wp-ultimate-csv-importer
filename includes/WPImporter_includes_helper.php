@@ -311,7 +311,7 @@ class WPImporter_includes_helper {
                 $fileexists = file_exists($path);
                 if ($fileexists) {
                         $resource = fopen($path, 'r');
-                        $init = 0;
+                    $init = 0;
                         while ($keys = fgetcsv($resource, '', $delim, '"')) {
                                 if ($init == 0) {
                                         $this->headers = $keys;
